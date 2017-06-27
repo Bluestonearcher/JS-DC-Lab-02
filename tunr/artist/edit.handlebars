@@ -1,0 +1,23 @@
+<h2>Edit a new Artist</h2>
+
+<form action="/artist/edit/{{ artist.id }}" method="post">
+
+    <p>
+        <input type="text" name="name" value="{{ artist.name }}" placeholder="Name">
+    </p>
+    <p>
+        <input type="text" name="type" value="{{ artist.genre }}" placeholder="Genre">
+    </p>
+    <p>
+        <input type="text" name="type" value="{{ artist.band }}" placeholder="Band Name">
+    </p>
+    <p>
+    <input type="text" name="type" value="{{ artist.hit }}" placeholder="The Artist's Biggest Hit">
+    </p>
+    <p>
+    <input type="text" name="type" value="{{ artist.imageUrl }}" placeholder="Url for Artist Image">
+    </p>
+
+    <button type="submit" name="button">Save</button>
+
+</form>

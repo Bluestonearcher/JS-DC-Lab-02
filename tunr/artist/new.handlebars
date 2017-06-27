@@ -1,0 +1,32 @@
+<h2>Add a New Artist to Our Amazing Database of Amazing Artists!</h2>
+
+<form action="/artist/new" method="post">
+
+    <p>
+        <input type="text" name="name" value="{{ artist.name }}" placeholder="Name">
+    </p>
+
+    <p>
+        <input type="text" name="type" value="{{ artist.genre }}" placeholder="Genre">
+    </p>
+    <p>
+        <input type="text" name="name" value="{{ artist.hit }}" placeholder="The Artist's Number One Hit!">
+    </p>
+    <p>
+        <input type="text" name="type" value="{{ artist.band }}" placeholder="Artist's Band Name">
+    </p>
+    <p>
+        <input type="text" name="type" value="{{ artist.imageUrl }}" placeholder="Where shall we find the artist's image?">
+    </p>
+
+    <button type="submit" name="button">Save</button>
+
+</form>
+
+
+
+<!--artist.name = req.body.name,-->
+<!--artist.genre = req.body.genre,-->
+<!--artist.hit = req.body.hit,-->
+<!--artist.band = req.body.band,-->
+<!--imageUrl = req.body.imageUrl-->
